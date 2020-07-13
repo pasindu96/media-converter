@@ -45,6 +45,8 @@ public class MP4ToMP3Convert implements Converter{
 
         File sourceFile=new File(source);
         File outputFile=new File(output);
+        File[] inputFiles=sourceFile.listFiles();
+
         AudioAttributes audio = new AudioAttributes();
         audio.setCodec("libmp3lame");
         audio.setBitRate(new Integer(128000));
@@ -54,10 +56,15 @@ public class MP4ToMP3Convert implements Converter{
         attrs.setFormat("mp3");
         attrs.setAudioAttributes(audio);
         Encoder encoder = new Encoder();
-        try {
-            encoder.encode(sourceFile, outputFile, attrs);
-        } catch (EncoderException e) {
-            e.printStackTrace();
+
+        for(File file:inputFiles){
+
+            //System.out.println(new File(output+(file.toString().replace(sourceFile.toString(),"//")).replace(".mp4",".mp3"))+"\n");
+            try {
+                encoder.encode(file, new File(output+(file.toString().replace(sourceFile.toString(),"//")).replace(".mp4",".mp3")), attrs);
+            } catch (EncoderException e) {
+                e.printStackTrace();
+            }
         }
     }
 }
