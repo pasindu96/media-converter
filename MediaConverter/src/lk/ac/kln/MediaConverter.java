@@ -29,7 +29,7 @@ public class MediaConverter {
             String outputPath = props.getProperty("output");
 
             System.out.println(sourcePath+" "+outputPath);
-
+            new MP4ToMP3Convert().Convert(sourcePath,outputPath);
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();

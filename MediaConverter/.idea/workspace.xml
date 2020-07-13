@@ -27,6 +27,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -70,7 +71,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1594530570997</updated>
-      <workItem from="1594530575911" duration="4519000" />
+      <workItem from="1594530575911" duration="7367000" />
+      <workItem from="1594610205880" duration="620000" />
     </task>
     <servers />
   </component>
