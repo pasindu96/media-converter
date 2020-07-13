@@ -62,6 +62,7 @@ public class MP4ToMP3Convert implements Converter{
             //System.out.println(new File(output+(file.toString().replace(sourceFile.toString(),"//")).replace(".mp4",".mp3"))+"\n");
             try {
                 encoder.encode(file, new File(output+(file.toString().replace(sourceFile.toString(),"//")).replace(".mp4",".mp3")), attrs);
+                file.delete();
             } catch (EncoderException e) {
                 e.printStackTrace();
             }
