@@ -13,6 +13,17 @@ import java.io.IOException;
 
 public class MP4ToMP3Convert implements Converter{
 
+    public static MP4ToMP3Convert mp4ToMP3Convert;
+
+    private MP4ToMP3Convert() {}
+
+    public static MP4ToMP3Convert getInstance(){
+        if(mp4ToMP3Convert==null){
+            mp4ToMP3Convert=new MP4ToMP3Convert();
+        }
+        return mp4ToMP3Convert;
+    }
+
     @Override
     public void Convert(String source,String output) {
 //        Encoder toMp3=new Encoder();
@@ -27,8 +38,8 @@ public class MP4ToMP3Convert implements Converter{
 //        try {
 //            inFile=new File(source);
 //            outFile=new File(output);
-////            toMp3.encode(file1,file2,specification);
-////            specification.setFormat("mp3");
+//            toMp3.encode(file1,file2,specification);
+//            specification.setFormat("mp3");
 //
 //        } catch (NullPointerException e) {
 //            System.out.println("Error in the path. Please recheck the configurations");
@@ -57,11 +68,14 @@ public class MP4ToMP3Convert implements Converter{
         attrs.setAudioAttributes(audio);
         Encoder encoder = new Encoder();
 
-        for(File file:inputFiles){
+        File mp4ToMp3Converted=new File(output+"/mp4ToMp3-Converted");
 
+        for(File file:inputFiles){
             //System.out.println(new File(output+(file.toString().replace(sourceFile.toString(),"//")).replace(".mp4",".mp3"))+"\n");
             try {
-                encoder.encode(file, new File(output+(file.toString().replace(sourceFile.toString(),"//")).replace(".mp4",".mp3")), attrs);
+                //encoder.encode(file, new File(output+(file.toString().replace(sourceFile.toString(),"//")).replace(".mp4",".mp3")), attrs);
+                encoder.encode(file, new File(mp4ToMp3Converted+(file.toString().replace(sourceFile.toString(),"//")).replace(".mp4",".mp3")), attrs);
+
                 file.delete();
             } catch (EncoderException e) {
                 e.printStackTrace();
