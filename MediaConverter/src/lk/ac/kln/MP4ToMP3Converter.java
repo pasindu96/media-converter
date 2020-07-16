@@ -5,21 +5,17 @@ import it.sauronsoftware.jave.Encoder;
 import it.sauronsoftware.jave.EncoderException;
 import it.sauronsoftware.jave.EncodingAttributes;
 
-import javax.sound.sampled.AudioFileFormat;
-import javax.sound.sampled.AudioSystem;
-import javax.sound.sampled.UnsupportedAudioFileException;
 import java.io.File;
-import java.io.IOException;
 
-public class MP4ToMP3Convert implements Converter{
+public class MP4ToMP3Converter implements Converter{
 
-    public static MP4ToMP3Convert mp4ToMP3Convert;
+    public static MP4ToMP3Converter mp4ToMP3Convert;
 
-    private MP4ToMP3Convert() {}
+    private MP4ToMP3Converter() {}
 
-    public static MP4ToMP3Convert getInstance(){
+    public static MP4ToMP3Converter getInstance(){
         if(mp4ToMP3Convert==null){
-            mp4ToMP3Convert=new MP4ToMP3Convert();
+            mp4ToMP3Convert=new MP4ToMP3Converter();
         }
         return mp4ToMP3Convert;
     }
