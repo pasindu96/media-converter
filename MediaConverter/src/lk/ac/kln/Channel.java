@@ -1,0 +1,5 @@
+package lk.ac.kln;
+
+public interface Channel {
+    public void update(Object o);
+}
