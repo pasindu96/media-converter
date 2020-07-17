@@ -20,7 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ce4ee1d-3f3c-46b5-b0df-59fc5634a011" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/lk/ac/kln/MediaFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +30,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -64,7 +64,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.WatchDirectory">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="lk.ac.kln.MediaConverter" />
       <module name="MediaConverter" />
@@ -75,8 +75,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WatchDirectory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lk.ac.kln.WatchDirectory" />
+      <module name="MediaConverter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lk.ac.kln.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WatchDirectory" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -95,7 +109,9 @@
       <workItem from="1594610205880" duration="8252000" />
       <workItem from="1594750745323" duration="1879000" />
       <workItem from="1594870354212" duration="3814000" />
-      <workItem from="1594875868789" duration="1756000" />
+      <workItem from="1594875868789" duration="1970000" />
+      <workItem from="1594938695583" duration="595000" />
+      <workItem from="1595000865524" duration="2054000" />
     </task>
     <servers />
   </component>
@@ -112,11 +128,28 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="682" y="266" width="424" height="485" key="FileChooserDialogImpl" timestamp="1594876372537">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="682" y="266" width="424" height="485" key="FileChooserDialogImpl/0.28.1920.1052@0.28.1920.1052" timestamp="1594876372537" />
+    <state width="1344" height="242" key="GridCell.Tab.0.bottom" timestamp="1595002634997">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state width="1344" height="242" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1595002634997" />
+    <state width="1344" height="242" key="GridCell.Tab.0.center" timestamp="1595002634996">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state width="1344" height="242" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1595002634996" />
+    <state width="1344" height="242" key="GridCell.Tab.0.left" timestamp="1595002634995">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state width="1344" height="242" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1595002634995" />
+    <state width="1344" height="242" key="GridCell.Tab.0.right" timestamp="1595002634996">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state width="1344" height="242" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1595002634996" />
   </component>
 </project>
