@@ -64,14 +64,16 @@ public class MP4ToMP3Converter implements Converter{
         attrs.setAudioAttributes(audio);
         Encoder encoder = new Encoder();
 
-        File mp4ToMp3Converted=new File(output+"/mp4ToMp3-Converted");
+        File mp4ToMp3Converted=new File(output+"/mp4Tomp3-Converted");
 
         for(File file:inputFiles){
+            System.out.println("Converting file :"+ source);
             //System.out.println(new File(output+(file.toString().replace(sourceFile.toString(),"//")).replace(".mp4",".mp3"))+"\n");
             try {
                 //encoder.encode(file, new File(output+(file.toString().replace(sourceFile.toString(),"//")).replace(".mp4",".mp3")), attrs);
                 encoder.encode(file, new File(mp4ToMp3Converted+(file.toString().replace(sourceFile.toString(),"//")).replace(".mp4",".mp3")), attrs);
-
+                System.out.println("Conversion Successfull! MP3 file Saved! in" + output);
+                // delete source file after conversion
                 file.delete();
             } catch (EncoderException e) {
                 e.printStackTrace();

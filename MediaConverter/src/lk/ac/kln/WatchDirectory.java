@@ -30,7 +30,7 @@ public class WatchDirectory extends ConverterObservable {
     ConverterFactory factory=new ConverterFactory();
 
     // method to check for file changes in a given directory
-    public void watchMediaFile() throws IOException,
+    public void convertMediaFile() throws IOException,
             InterruptedException {
 
         try {
@@ -43,7 +43,7 @@ public class WatchDirectory extends ConverterObservable {
             String sourcePath = props.getProperty("source");
 
             //Reading output path using the configuration file
-            String outputPath = props.getProperty("output") + "/" + folderName;
+            String outputPath = props.getProperty("output");
 
             // create the full path to input folder
             String filePath =  sourcePath + "/" + folderName +"/";

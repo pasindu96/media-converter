@@ -39,16 +39,17 @@ public class MediaConverter{
 
                if ( option == 1) {
                    //Getting a mp4tomp3Convert object using Factory
-                   WatchDirectory watchMP3Dir = new WatchDirectory("MP4TOMP3");
-
+                   WatchDirectory watchMP3Dir = new WatchDirectory("mp4Tomp3");
+                   watchMP3Dir.convertMediaFile();
                } else if ( option == 2) {
-                   //Getting a mp4tomp3Convert object using Factory
-                   WatchDirectory watchFLVDir = new WatchDirectory("MP4TOMP3");
-
-               } else if ( option == 2) {
-                   //Getting a mp4tomp3Convert object using Factory
-                   WatchDirectory watchMKVDir = new WatchDirectory("MP4TOMP3");
-
+                   //Getting a mp4toflvConvert object using Factory
+                   WatchDirectory watchFLVDir = new WatchDirectory("mp4Toflv");
+                    watchFLVDir.convertMediaFile();
+               } else if ( option == 3) {
+                   //Getting a mp4tomkvConvert object using Factory
+                   WatchDirectory watchMKVDir = new WatchDirectory("mp4Tomkv");
+                   watchMKVDir.convertMediaFile();
+               } else if ( option == 4)   {
                  System.exit(0);
                } else {
                    System.out.println("Invalid Input.. Restarting...");
@@ -59,6 +60,8 @@ public class MediaConverter{
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }
