@@ -40,17 +40,20 @@ public class MediaConverter{
                if ( option == 1) {
                    //Getting a mp4tomp3Convert object using Factory
                    WatchDirectory watchMP3Dir = new WatchDirectory("MP4TOMP3");
+                   watchMP3Dir.watchMediaFile();
 
                } else if ( option == 2) {
                    //Getting a mp4tomp3Convert object using Factory
                    WatchDirectory watchFLVDir = new WatchDirectory("MP4TOMP3");
 
-               } else if ( option == 2) {
+               } else if ( option == 3) {
                    //Getting a mp4tomp3Convert object using Factory
                    WatchDirectory watchMKVDir = new WatchDirectory("MP4TOMP3");
 
-                 System.exit(0);
-               } else {
+
+               } else if (option==4)
+                   System.exit(0);
+               else {
                    System.out.println("Invalid Input.. Restarting...");
                }
             }
@@ -59,6 +62,8 @@ public class MediaConverter{
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }

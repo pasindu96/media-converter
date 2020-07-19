@@ -49,9 +49,9 @@ public class MP4ToMP3Converter implements Converter{
 //        } catch (IOException e) {
 //            e.printStackTrace();
 //        }
-
         File sourceFile=new File(source);
         File outputFile=new File(output);
+//        System.out.println("COnvert" +sourceFile);
         File[] inputFiles=sourceFile.listFiles();
 
         AudioAttributes audio = new AudioAttributes();
@@ -71,7 +71,7 @@ public class MP4ToMP3Converter implements Converter{
             try {
                 //encoder.encode(file, new File(output+(file.toString().replace(sourceFile.toString(),"//")).replace(".mp4",".mp3")), attrs);
                 encoder.encode(file, new File(mp4ToMp3Converted+(file.toString().replace(sourceFile.toString(),"//")).replace(".mp4",".mp3")), attrs);
-
+                System.out.println(file.toString()+" : Converted Successfully ");
                 file.delete();
             } catch (EncoderException e) {
                 e.printStackTrace();

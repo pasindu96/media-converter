@@ -43,12 +43,13 @@ public class WatchDirectory extends ConverterObservable {
             String sourcePath = props.getProperty("source");
 
             //Reading output path using the configuration file
-            String outputPath = props.getProperty("output") + "/" + folderName;
+            String outputPath = props.getProperty("output") ;
 
             // create the full path to input folder
-            String filePath =  sourcePath + "/" + folderName +"/";
+            String filePath =  sourcePath + "\\" + folderName +"\\";
             Path mediaFolder = Paths.get(filePath);
             System.out.println("File Path:" + filePath);
+
 
             // instantiating watch service
             WatchService watchService = FileSystems.getDefault().newWatchService();
@@ -62,11 +63,13 @@ public class WatchDirectory extends ConverterObservable {
                     WatchEvent.Kind kind = event.kind();
                     if (StandardWatchEventKinds.ENTRY_CREATE.equals(event.kind())) {
                         String fileName = event.context().toString();
-                        System.out.println("File Created:" + fileName);
+                        System.out.println("File Found:" + fileName);
 
                         // concat filename to file path
-                        filePath += '/' + fileName;
-                        this.setPath(filePath);
+
+
+//                        filePath +=fileName;
+//                        this.setPath(filePath);
 
                         // create convert object using MediaConverter Factory
                         Converter toMP3Convert=factory.getInstance(folderName);
@@ -81,7 +84,9 @@ public class WatchDirectory extends ConverterObservable {
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
+            System.out.println("File not found");
         } catch (IOException e) {
+            System.out.println("IO Exception");
             e.printStackTrace();
         }
 
