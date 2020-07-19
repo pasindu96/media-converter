@@ -26,6 +26,9 @@ public class WatchDirectory extends ConverterObservable {
     // accessing path config file
     File configFile =new File("config.properties");
 
+    // crate factory object
+    ConverterFactory factory=new ConverterFactory();
+
     // method to check for file changes in a given directory
     public void watchMediaFile() throws IOException,
             InterruptedException {
@@ -39,9 +42,12 @@ public class WatchDirectory extends ConverterObservable {
             //Reading source path using the configuration file
             String sourcePath = props.getProperty("source");
 
+            //Reading output path using the configuration file
+            String outputPath = props.getProperty("output") + "/" + folderName;
+
+            // create the full path to input folder
             String filePath =  sourcePath + "/" + folderName +"/";
             Path mediaFolder = Paths.get(filePath);
-           // String filePath = mediaFolder.toAbsolutePath().toString();
             System.out.println("File Path:" + filePath);
 
             // instantiating watch service
@@ -57,8 +63,16 @@ public class WatchDirectory extends ConverterObservable {
                     if (StandardWatchEventKinds.ENTRY_CREATE.equals(event.kind())) {
                         String fileName = event.context().toString();
                         System.out.println("File Created:" + fileName);
+
+                        // concat filename to file path
                         filePath += '/' + fileName;
                         this.setPath(filePath);
+
+                        // create convert object using MediaConverter Factory
+                        Converter toMP3Convert=factory.getInstance(folderName);
+
+                        // convert file and store in the output directory
+                        toMP3Convert.Convert(filePath,outputPath);
                     }
                 }
                 valid = watchKey.reset();
