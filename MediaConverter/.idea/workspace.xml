@@ -21,17 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5ce4ee1d-3f3c-46b5-b0df-59fc5634a011" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MediaConverter/META-INF/MediaConverter.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MediaConverter/lk/ac/kln/ConverterFactory$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MediaConverter/lk/ac/kln/ConverterFactory$converterType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MediaConverter/lk/ac/kln/ConverterFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediaConverter/lk/ac/kln/ConverterFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MediaConverter/lk/ac/kln/ConverterObservable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediaConverter/lk/ac/kln/ConverterObservable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MediaConverter/lk/ac/kln/MP4ToMP3Convert.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediaConverter/lk/ac/kln/MP4ToMP3Convert.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MediaConverter/lk/ac/kln/MP4ToMP3Converter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediaConverter/lk/ac/kln/MP4ToMP3Converter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MediaConverter/lk/ac/kln/MediaConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediaConverter/lk/ac/kln/MediaConverter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MediaConverter/lk/ac/kln/WatchDirectory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediaConverter/lk/ac/kln/WatchDirectory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lk/ac/kln/MP4ToMP3Converter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lk/ac/kln/MP4ToMP3Converter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lk/ac/kln/MediaConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lk/ac/kln/MediaConverter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lk/ac/kln/WatchDirectory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lk/ac/kln/WatchDirectory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

@@ -30,10 +30,13 @@ public class WatchDirectory extends ConverterObservable {
     ConverterFactory factory=new ConverterFactory();
 
     // method to check for file changes in a given directory
-    public void watchMediaFile() throws IOException,
-            InterruptedException {
+    public void watchMediaFile() throws IOException, InterruptedException {
 
         try {
+
+            // create convert object using MediaConverter Factory
+            Converter toMP3Convert=factory.getInstance(folderName);
+
             //Read the content inside the configuration file
             FileReader reader=new FileReader(configFile);
             Properties props=new Properties();
@@ -50,6 +53,14 @@ public class WatchDirectory extends ConverterObservable {
             Path mediaFolder = Paths.get(filePath);
             System.out.println("File Path:" + filePath);
 
+            //Check for already available files and convert them
+            String fileNames[];
+            File file=new File(sourcePath);
+            fileNames= file.list();
+            for (String existingFile: fileNames) {
+                System.out.println("File Found:" + existingFile);
+                toMP3Convert.Convert(filePath,outputPath);
+            }
 
             // instantiating watch service
             WatchService watchService = FileSystems.getDefault().newWatchService();
@@ -71,8 +82,6 @@ public class WatchDirectory extends ConverterObservable {
 //                        filePath +=fileName;
 //                        this.setPath(filePath);
 
-                        // create convert object using MediaConverter Factory
-                        Converter toMP3Convert=factory.getInstance(folderName);
 
                         // convert file and store in the output directory
                         toMP3Convert.Convert(filePath,outputPath);

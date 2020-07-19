@@ -51,7 +51,7 @@ public class MP4ToMP3Converter implements Converter{
 //        }
         File sourceFile=new File(source);
         File outputFile=new File(output);
-//        System.out.println("COnvert" +sourceFile);
+
         File[] inputFiles=sourceFile.listFiles();
 
         AudioAttributes audio = new AudioAttributes();
