@@ -15,6 +15,8 @@ public class MP4ToMP3Convert implements Converter{
 
     public static MP4ToMP3Convert mp4ToMP3Convert;
 
+    ConverterObservable observable = new ConverterObservable();
+
     private MP4ToMP3Convert() {}
 
     public static MP4ToMP3Convert getInstance(){
