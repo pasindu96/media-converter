@@ -5,9 +5,9 @@ public class ConverterFactory {
 
     public Converter getInstance(String type){
         switch (type){
-            case "MP4TOMP3":return MP4ToMP3Converter.getInstance();
-            case "MP4TOFLV":return MP4ToFLVConverter.getInstance();
-            case "MP4TOMKV":return MP4ToMKVConverter.getInstance();
+            case "mp4Tomp3":return MP4ToMP3Converter.getInstance();
+            case "mp4Toflv":return MP4ToFLVConverter.getInstance();
+            case "mp4Tomkv":return MP4ToMKVConverter.getInstance();
             default:return null;
         }
     }
