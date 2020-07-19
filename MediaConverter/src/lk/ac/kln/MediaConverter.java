@@ -39,20 +39,16 @@ public class MediaConverter{
 
                if ( option == 1) {
                    //Getting a mp4tomp3Convert object using Factory
-                   WatchDirectory watchMP3Dir = new WatchDirectory("MP4toMP3");
-                   Converter toMP3Convert=factory.getInstance(ConverterFactory.converterType.MP4TOMP3);
-                   toMP3Convert.Convert(sourcePath,outputPath);
+                   WatchDirectory watchMP3Dir = new WatchDirectory("MP4TOMP3");
+
                } else if ( option == 2) {
                    //Getting a mp4tomp3Convert object using Factory
-                   WatchDirectory watchFLVDir = new WatchDirectory("MP4toMP3");
-                   Converter toMP3Convert=factory.getInstance(ConverterFactory.converterType.MP4TOFLV);
-                   toMP3Convert.Convert(sourcePath,outputPath);
+                   WatchDirectory watchFLVDir = new WatchDirectory("MP4TOMP3");
+
                } else if ( option == 2) {
                    //Getting a mp4tomp3Convert object using Factory
-                   WatchDirectory watchMKVDir = new WatchDirectory("MP4toMP3");
-                   Converter toMP3Convert=factory.getInstance(ConverterFactory.converterType.MP4TOMKV);
-                   toMP3Convert.Convert(sourcePath,outputPath);
-               } else if ( option == 4) {
+                   WatchDirectory watchMKVDir = new WatchDirectory("MP4TOMP3");
+
                  System.exit(0);
                } else {
                    System.out.println("Invalid Input.. Restarting...");

@@ -21,12 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5ce4ee1d-3f3c-46b5-b0df-59fc5634a011" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MediaConverter/lk/ac/kln/MP4ToMP3Convert.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediaConverter/lk/ac/kln/MP4ToMP3Convert.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MediaConverter/lk/ac/kln/MediaConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediaConverter/lk/ac/kln/MediaConverter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MediaConverter/lk/ac/kln/NewChannel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MediaConverter/lk/ac/kln/WatchDirectory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediaConverter/lk/ac/kln/WatchDirectory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lk/ac/kln/ConverterFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lk/ac/kln/ConverterFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lk/ac/kln/MP4ToMP3Convert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lk/ac/kln/MP4ToMP3Convert.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lk/ac/kln/MediaConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lk/ac/kln/MediaConverter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lk/ac/kln/WatchDirectory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lk/ac/kln/WatchDirectory.java" afterDir="false" />
     </list>
@@ -121,7 +116,7 @@
       <workItem from="1594938695583" duration="595000" />
       <workItem from="1595000865524" duration="4807000" />
       <workItem from="1595087938483" duration="2630000" />
-      <workItem from="1595121865947" duration="3927000" />
+      <workItem from="1595121865947" duration="5675000" />
     </task>
     <servers />
   </component>
