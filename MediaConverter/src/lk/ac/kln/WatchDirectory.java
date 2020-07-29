@@ -58,7 +58,7 @@ public class WatchDirectory extends ConverterObservable {
             File file=new File(sourcePath);
             fileNames= file.list();
             for (String existingFile: fileNames) {
-                System.out.println("File Found:" + existingFile);
+//                System.out.println("File Found:" + existingFile);
                 toMP3Convert.Convert(filePath,outputPath);
             }
 

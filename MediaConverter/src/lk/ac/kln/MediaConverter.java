@@ -38,17 +38,20 @@ public class MediaConverter{
                 Integer option = scan.nextInt();
 
                if ( option == 1) {
-                   //Getting a mp4tomp3Convert object using Factory
+                   //Getting a mp4tomp3 Convert object using Factory
                    WatchDirectory watchMP3Dir = new WatchDirectory("MP4TOMP3");
                    watchMP3Dir.watchMediaFile();
 
                } else if ( option == 2) {
-                   //Getting a mp4tomp3Convert object using Factory
-                   WatchDirectory watchFLVDir = new WatchDirectory("MP4TOMP3");
+                   //Getting a mp4toflv Convert object using Factory
+                   WatchDirectory watchFLVDir = new WatchDirectory("MP4TOFLV");
+                   watchFLVDir.watchMediaFile();
+
 
                } else if ( option == 3) {
-                   //Getting a mp4tomp3Convert object using Factory
-                   WatchDirectory watchMKVDir = new WatchDirectory("MP4TOMP3");
+                   //Getting a mp4tomkvConvert object using Factory
+                   WatchDirectory watchMKVDir = new WatchDirectory("MP4TOMKV");
+                   watchMKVDir.watchMediaFile();
 
 
                } else if (option==4)
