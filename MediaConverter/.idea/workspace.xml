@@ -21,15 +21,15 @@
   <component name="ChangeListManager">
     <list default="true" id="5ce4ee1d-3f3c-46b5-b0df-59fc5634a011" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MediaConverter/lk/ac/kln/MP4ToMP3Convert.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediaConverter/lk/ac/kln/MP4ToMP3Convert.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MediaConverter/lk/ac/kln/MediaConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediaConverter/lk/ac/kln/MediaConverter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MediaConverter/lk/ac/kln/NewChannel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MediaConverter/lk/ac/kln/MP4ToFLVConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediaConverter/lk/ac/kln/MP4ToFLVConverter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MediaConverter/lk/ac/kln/MP4ToMKVConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediaConverter/lk/ac/kln/MP4ToMKVConverter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MediaConverter/lk/ac/kln/WatchDirectory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediaConverter/lk/ac/kln/WatchDirectory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lk/ac/kln/ConverterFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lk/ac/kln/ConverterFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lk/ac/kln/MP4ToMP3Convert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lk/ac/kln/MP4ToMP3Convert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lk/ac/kln/MP4ToFLVConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lk/ac/kln/MP4ToFLVConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lk/ac/kln/MP4ToMKVConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lk/ac/kln/MP4ToMKVConverter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lk/ac/kln/MediaConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lk/ac/kln/MediaConverter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lk/ac/kln/WatchDirectory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lk/ac/kln/WatchDirectory.java" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,7 +72,19 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Application.WatchDirectory">
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="lk.ac.kln.MediaConverter" />
       <module name="MediaConverter" />
@@ -98,8 +110,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.WatchDirectory" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.WatchDirectory" />
       </list>
     </recent_temporary>
   </component>
@@ -121,24 +133,26 @@
       <workItem from="1594938695583" duration="595000" />
       <workItem from="1595000865524" duration="4807000" />
       <workItem from="1595087938483" duration="2630000" />
-      <workItem from="1595121865947" duration="3927000" />
+      <workItem from="1595121865947" duration="5675000" />
+      <workItem from="1595996183132" duration="4838000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="682" y="266" width="424" height="485" key="FileChooserDialogImpl" timestamp="1594876372537">
